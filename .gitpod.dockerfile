@@ -1,6 +1,6 @@
 FROM gitpod/workspace-mysql
 
-USER sudo
+USER root
 RUN mysqladmin -u root password root
 
 USER gitpod
