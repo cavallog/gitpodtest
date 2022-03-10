@@ -1,8 +1,5 @@
 FROM gitpod/workspace-mysql
 
-USER root
-RUN mysqladmin -u root password root
-
 USER gitpod
 WORKDIR /home/gitpod/
 RUN wget https://files.phpmyadmin.net/phpMyAdmin/5.1.3/phpMyAdmin-5.1.3-all-languages.zip
