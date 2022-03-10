@@ -4,6 +4,8 @@ image:
 ports:
   - port: 3306
     onOpen: ignore
+  - port: 33060
+    onOpen: ignore
   - port: 8080
     onOpen: ignore
 
