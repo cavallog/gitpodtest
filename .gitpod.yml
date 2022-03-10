@@ -2,7 +2,7 @@ image:
   file: .gitpod.dockerfile
 tasks:
   - name: PHPMyAdmin
-    command: cd /home/gitpod/phpMyAdmin-5.1.3-all-languages && php -S localhost:8080
+    command: mysqladmin -u root password root && cd /home/gitpod/phpMyAdmin-5.1.3-all-languages && php -S localhost:8080
   - name: Backend
     init: cd packages/server && composer install
     command: php artisan serve
