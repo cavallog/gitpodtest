@@ -11,6 +11,8 @@ ports:
 
 tasks:
   - name: Backend
+    env:
+      APP_URL_GP: "$(gp url 8000)"
     before: cd packages/server
     init: |
       composer install
