@@ -18,7 +18,7 @@ tasks:
       composer install
       gp await-port 3306 && sleep 3 
       php artisan twill:install --no-interaction
-      php artisan twill:superadmin admin@admin.local admin
+      php artisan twill:superadmin admin@example.com admin
     command: php artisan serve
   - name: Frontend
     before: cd packages/app
